@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Probando</h1>
+    <main>
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="button-row">
+                <button onclick="clearDisplay()" class="clearBtn">C</button>
+                <button onclick="show('8')">8</button>
+                <button onclick="show('9')">9</button>
+                <button onclick="show('/')">/</button>
+            </div>
+            <div class="button-row">
+                <button onclick="show('5')">5</button>
+                <button onclick="show('6')">6</button>
+                <button onclick="show('7')">7</button>
+                <button onclick="show('*')">x</button>
+            </div>
+            <div class="button-row">
+                <button onclick="show('2')">2</button>
+                <button onclick="show('3')">3</button>
+                <button onclick="show('4')">4</button>
+                <button onclick="show('-')">-</button>
+            </div>
+            <div class="button-row">
+                <button onclick="show('1')">1</button>
+                <button onclick="show('0')">0</button>
+                <button onclick="show('.')">.</button>
+                <button onclick="show('+')">+</button>
+            </div>
+            <div class="button-row">
+                <button onclick="calculate()" class="equalBtn">=</button>
+            </div>
+        </div>
+    </main>
+    <!--Script-->
+    <script src="script.js"></script>
 </body>
+</body>
+
 </html>
